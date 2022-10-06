@@ -2,7 +2,7 @@ name: simple-workflow
 run-name: ${{ github.actor }} is testing Snakemake
 on: [push]
 jobs:
-  check-bats-version:
+  run-snakemake-basic-tests:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
