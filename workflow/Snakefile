@@ -5,6 +5,8 @@ rule all:
 rule test:
 	output:
 		result="results/{dataset}.txt"
+	conda:
+		"conda/bash.yaml"
 	shell:
 		"""
 		echo {wildcards.dataset} > {output}
